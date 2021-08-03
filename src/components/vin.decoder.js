@@ -181,10 +181,10 @@ function VinDecoder(props){
                         Object.keys(Values).map(id=>{
                             return <tr key={id}>
                                 <td>{Values[id].VIN}</td>
-                                <td>{Values[id].Make}</td>
+                                <td>{Values[id].Make?Values[id].Make:"N/A"}</td>
                                 <td>{Values[id].Manufacturer_Name?Values[id].Manufacturer_Name:"N/A"}</td>
                                 <td>{Values[id].Model?Values[id].Model:"N/A"}</td>
-                                <td>{Values[id].Model_Year}</td>
+                                <td>{Values[id].Model_Year?Values[id].Model_Year:"N/A"}</td>
                             </tr>
                         })
                         :
